@@ -11,6 +11,12 @@ export default {
         Inter: ["Inter", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
       },
+      backgroundImage: {
+        'first_image': "url('..\assets\bg_image.jpeg')",
+      },
+      gridTemplateColumns: {
+        in: 'repeat(2, minmax(340px, 1fr))',
+      }
     },
   },
   plugins: [],

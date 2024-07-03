@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import RenderNav from './components/rendernav';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   
 
   return (
-    <div>
-      
-    </div>
+    <BrowserRouter>
+    <RenderNav />
+    </BrowserRouter>
   )
 }
 

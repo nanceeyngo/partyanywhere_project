@@ -1,3 +1,440 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* App.css */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 8px;
+
+  }
+  .dropdownm {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    margin-top: 10px;
+  }
+
+  .dropdownm li {
+    display: block;
+  }
+
+  .dropdown li {
+    display: block;
+  }
+  .dropdownm li a {
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownm li a:hover {
+    background-color: rgb(128, 114, 114)
+  }
+  .dropdown li a:hover {
+    background-color: #a19191;
+  }
+  
+  li:hover .dropdownm {
+    display: block;
+  }
+  li:hover .dropdown {
+    display: block;
+  }
+
+  .arrow::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.28em;
+    vertical-align: 0.09em;
+    border-top: 0.42em solid;
+    border-right: 0.32em solid transparent;
+    border-left: 0.32em solid transparent;
+  }
+
+
+
+
+
+
+
+
+
+/*Zainab's css codes*/
+
+  .container {
+    margin-top: 40px;
+    margin-left: 100px;
+    
+
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    
+    justify-content: space-between;
+    
+    margin-left: 120px;
+    
+
+   
+    
+}
+
+.header-container h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 57.6px;
+}
+
+.header-container p {
+    margin-top: 0;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+.form-container label { 
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .form-container2 label { 
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .form-container ::placeholder {   
+   font-family: Lato;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: left;
+  
+  }
+  .form-container2 ::placeholder{
+    font-family: Lato;
+    font-size: 17px;
+   
+  }
+  
+  .form-container button {   
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+  }
+  
+  
+  /* interactions */
+  
+  .form-container button {
+      animation: button ease-out 800ms;
+      
+    }
+    
+  .form-container button:hover {
+    width: 560px;
+      }
+
+
+      
+
+    
+
+    .form-container input {
+        display: block;
+        width: 1096px;
+        border-radius: 8px;
+        border: 1px solid #B3B2B2;
+        padding: 20px;
+        margin: 15px 0;    
+    }
+    .form-container2 input {
+      padding: 10px 20px;
+      margin: 15px 0; 
+      width: 900px;
+      border: 1px solid #8b8686;
+      border-radius: 8px;
+      
+    }
+    
+    .form-container button {
+        padding: 19px 10px;
+        margin: 5px 0;
+        border-radius: 8px;
+        background: #805300;
+        border: none;
+        width: 530px;
+        color: #fff;
+        margin-top: 50px;
+    }
+
+/* Zainab's modal pop-up */
+
+#walletModal {
+  display: none;  
+  z-index: 2; 
+  background-color: #fff;
+  width: 45rem;
+  padding: 2rem;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  border-radius: 8px;
+}
+
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid; */
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 50px;
+  
+}
+
+.modal-flex h1 {
+  margin-top: 45px;
+}
+
+
+#done-btn{
+  padding: 19px 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background: #805300;
+  border: none;
+  width: 370px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  margin-top: 30px;
+}
+#done-btn:hover {
+  width: 400px;
+    }
+
+/* typography */
+.modal-flex h1 {
+font-family: Playfair Display;
+font-size: 38px;
+font-weight: 400;
+line-height: 57.6px;
+}
+
+
+.errormsg{
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: ease-in;
+}
+
+
+    @media only screen and (max-width: 780px) {
+      .container {
+        padding-left: 40px;
+        
+        margin-left: 0;
+        margin-top: 6px;
+        
+    
+    }
+
+    .form-container2 {
+      padding-left: 40px;
+      
+      margin-left: 0;
+      margin-top: 6px; 
+      
+  
+  }
+  .import-container {
+    
+    margin-left: 20px;
+  }
+  .import-container div{
+    width: 95%
+  }
+
+    .form-container input {
+      
+      width: 80%;
+          
+  }
+  .login-button {
+    width: 100px;
+    margin-right: 200px;
+    
+  }
+
+  .loginform input{
+   width: 386px;
+  }
+  .form-container2 input {
+      
+    width: 90%;
+        
+}
+
+.forgot-password input{
+  width: 386px;
+}
+.reset-password input{
+  width: 386px;
+}
+
+
+  .header-container {
+    
+    margin-left: 0;
+    text-align: center;
+    padding: 0;
+    padding-right: 40px;
+    
+}
+
+.form-container button {   
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  width: 180px;
+  
+}
+
+.form-container button:hover {
+  width: 200px;
+    }
+  
+    #walletBtn {
+      display: flex;
+      justify-content: center;
+      padding-right: 40px;
+    }
+
+    #done-btn{
+      
+      
+      width: 180px;
+      
+  }
+
+  #done-btn:hover {
+    width: 200px;
+      }
+
+  #walletModal {
+    width: 34rem;
+    top: 40%; 
+    padding: 5px;
+}
+
+.modal-flex h1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+  
+  }
+
+
+    
+    /* responsiveness */
+    
+
+   
+
+    
+  
+  
+
+/* .menu-items {
+    position: relative;
+  }
+
+.menu-items button {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+
+button span {
+    margin-left: 3px;
+  }
+
+.menu-items a:hover,
+.menu-items button:hover {
+    background-color: #f2f2f2;
+  }
+
+.arrow::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.28em;
+    vertical-align: 0.09em;
+    border-top: 0.42em solid;
+    border-right: 0.32em solid transparent;
+    border-left: 0.32em solid transparent;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 0;
+    left: auto;
+    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    font-size: 0.875rem;
+    z-index: 9999;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: none;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+  
+  .dropdown .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+ */
+
+
