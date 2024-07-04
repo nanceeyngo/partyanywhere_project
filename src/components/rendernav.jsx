@@ -7,7 +7,6 @@ import Events from '../pages/events';
 import Home from '../pages/home';
 import Rsvp from '../pages/rsvp';
 import CreateInvitation from '../pages/e-invite1';
-import Livestream from '../pages/live_streaming';
 import Create from '../pages/create_wallet';
 import Spray from '../pages/spray_pattern';
 import Import from '../pages/import_contact';
@@ -19,6 +18,9 @@ import ResetPwd from '../pages/reset_password';
 import Signup from '../pages/sign_up_page';
 import CreateInvitation2 from '../pages/e-invite2';
 import CustomizeInvite from '../pages/customize_invite';
+import Livestream from '../pages/live_streaming';
+import Livestream2 from '../pages/live_streaming2';
+import Livestream3 from '../pages/live_streaming3';
 
 
 
@@ -47,6 +49,9 @@ const RenderNav = () => {
                 <Route path="/import_contact" element={<Import title="Import contact" />} />
                 <Route path="/guest_list" element={<Guestlist title="Guest List" />} />
                 <Route path="/create_invite_link" element={<Invitelink title="Invite link" />} />
+                <Route path="/live_streaming2" element={<Livestream2 title="Invite link" />} />
+                <Route path="/live_streaming3" element={<Livestream3 title="Invite link" />} />
+                
                 
           <Route path="/login_page" element={<Login />} />
           <Route path="/forgot_password" element={<ForgotPwd />} />

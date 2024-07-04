@@ -15,15 +15,16 @@ const CustomizeInvite = () => {
         <>
           <div className='mt-11 ml-14 font-Inter'>
 
-              <div className='flex gap-7 items-center mb-10 '>
+              <div className='flex gap-2 items-center mb-10'>
               <NavLink to="/e-invite2">
                       <HiOutlineArrowLeft size={30} className=' text-[#023d3d] mr-6 ' /> </NavLink>
-              <p className='font-bold text-[28px] '>Customize Invite</p>
+              <p className='font-bold text-[26px] font-Playfair'>Customize Invite</p>
             </div>
-
-            <img src={PartyImg} alt="Let's Party" className='w-[300px] h-[300px] mb-10 ml-16 ' />
+            
+            <div className='w-[300px] md:m-0 m-auto md:mr-0 mr-14'>
+            <img src={PartyImg} alt="Let's Party" className='w-[300px] h-[300px] mb-10 ' />
         
-            <div className='flex flex-wrap w-[440px] gap-7 mb-8 '>
+            <div className='flex flex-wrap w-[400px] md:w-[440px] gap-7 mb-8 '>
                 <div className='border-2 border-orange-600  w-[200px] h-11 rounded-md flex items-center justify-around font-medium text-neutral-700'>
                     <IoMdColorFilter size={22} />
                     <p>Edit color</p>
@@ -55,17 +56,19 @@ const CustomizeInvite = () => {
                 </div>
             </div>
             
-            <div className='mb-8 relative'>
+            <div className='mb-8 md:block flex justify-center cursor-pointer'>
+            <div>
             <p className='font-medium mb-2'>Media upload</p>
-            <p className='rounded-md border-2 w-[440px] h-[150px] border-orange-600'></p>
-            <LuUploadCloud size={36} className='absolute left-52 text-neutral-500 bottom-12 cursor-pointer' />
+            <p className='rounded-md border-2 w-[300px] md:w-[440px] h-[150px] border-orange-600'></p>
+            <LuUploadCloud size={36} className='absolute left-52 md:left-64 text-neutral-500 md:top-[52rem] top-[66rem] md:bottom-20 cursor-pointer' />
+            </div>
             </div>
 
             <div className='rounded-sm flex mb-10'>
                 <button className='text-white font-Lato bg-[#023d3d] px-auto py-2 w-48 mr-16 rounded-lg '>Preview</button>
                 <button className='border-orange-600 text-amber-500 border rounded-lg px-auto py-2 w-48 mr-2 font-Lato '>Save</button>
             </div>
-
+</div>
             </div>  
         </>
     );
