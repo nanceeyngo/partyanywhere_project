@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa6";
+import successful1 from "../assets/successful1.png";
+import { IoMdClose } from "react-icons/io";
 
 const Rsvp = () => {
 
@@ -8,6 +10,10 @@ const Rsvp = () => {
     const [inputValues, setInputValues] = useState({});
    //declaring a constant to validate form
     const [error, setError] = useState('');
+
+    
+    
+    const [showDialog, setShowDialog] = useState(false);
    
    
 //creating a function to hadle input changes in the form
@@ -33,9 +39,14 @@ const Rsvp = () => {
         if (!error) {
 
         console.log('Form submitted with input:', inputValues);
-        alert('THANK YOU FOR BOOKING WITH US! YOUR RESPONSE HAS BEEN RECEIVED.');
+        setShowDialog(true);
         }
     }
+
+    const closeModal = () => {
+        setShowDialog(false);
+    };
+
     return (
         <div className='form-container2 mt-4 ml-12'>
             
@@ -84,7 +95,7 @@ const Rsvp = () => {
             <label htmlFor='seat'>
                 Seat number  </label><br></br>
             <input 
-                type="text"
+                type="number"
                 name='seat'
                 placeholder='Enter seat number'
                 value={inputValues.seat || ""}
@@ -101,12 +112,12 @@ const Rsvp = () => {
                 onChange={handleInputChange} required/>
             <br></br>
 
-            <label htmlFor='uniqu'>
+            <label htmlFor='unique'>
                 Unique ID  </label><br></br>
             <input 
-                type="text"
+                type="number"
                 name='unique'
-                placeholder='Enter your uniqe ID'
+                placeholder='Enter your unique ID'
                 value={inputValues.unique || ""}
                 onChange={handleInputChange} required/>
             <br></br>
@@ -114,7 +125,7 @@ const Rsvp = () => {
             {error && <p className='errormsg'>{error}</p>}
             
             <div className='py-8 flex gap-6'>
-            <button className='bg-[#174C4D] px-4 rounded-lg py-[0.7rem] text-white'>Add guest</button>
+            <button type='submit' className='bg-[#174C4D] px-4 rounded-lg py-[0.7rem] text-white'>Add guest</button>
             
             <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-4 rounded-lg py-[0.7rem]'><NavLink to="/import_contact">Import contact</NavLink></button>
             </div>
@@ -122,7 +133,31 @@ const Rsvp = () => {
 
             </form>
 
+            {showDialog && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-8 rounded-md shadow-md text-center relative">
+                        
+                        
+                        <IoMdClose size={22} className="absolute top-4 right-4 cursor-pointer text-[#023d3d]  " onClick={closeModal} />
 
+                        
+                        
+                        <img src={successful1} alt="Successful" className='mx-auto mt-14 mb-10' />
+                        
+                        
+                        <p className="text-[16px] font-normal font-Lato">Guest successfully added</p>
+                        
+                        <div className='py-10 flex gap-6'>
+             <button onClick={closeModal} className='bg-[#023d3d] px-16 rounded-lg py-[0.7rem] text-white'>Done</button>
+
+            
+            <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-8 rounded-lg py-[0.7rem]'><NavLink to="/guest_list">View guest list</NavLink></button>
+            
+            </div>
+                    
+                    </div>
+                </div>
+            )};
             
             
         </div>

@@ -96,10 +96,10 @@ const Home = () => {
                 </p>
                 <div className='flex flex-col md:flex-row justify-center gap-4 m-3 font-Lato'>
             <button type="button"
-           className='bg-[#AA6E00] px-6 rounded-lg py-3 text-white text-[0.8rem] md:text-[1rem]'><NavLink to="/sign_up_page">Sign up now</NavLink></button>
+           className='bg-[#023d3d] px-6 rounded-lg py-3 text-white text-[0.8rem] md:text-[1rem]'><NavLink to="/sign_up_page">Sign up now</NavLink></button>
             <button type='button'
            
-            className='bg-transparent border-[#AA6E00] border px-6 rounded-lg py-3 text-[white] text-[0.8rem] md:text-[1rem]'>Request a demo</button>
+            className='bg-transparent border-[#f7a437] border px-6 rounded-lg py-3 text-[white] text-[0.8rem] md:text-[1rem]'>Request a demo</button>
         
                 </div>
                 </div>
@@ -114,17 +114,17 @@ const Home = () => {
 
             <section className='flex flex-col md:flex-row mt-12 gap-16 md:gap-24 px-20 md:px-14'>
                 <div className='text-center'>
-                    <div className='bg-[#FFE1AA] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><GoDeviceDesktop size={30} /></div>
+                    <div className='bg-[#f7a437] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><GoDeviceDesktop size={30} /></div>
                     <h1 className='font-Playfair text-[28px] font-medium'>Live streaming</h1>
                     <p className='font-Lato text-[17px]'>Host online! With livestream, your guests are never too faraway to join your celebration</p>
                 </div>
                 <div className='text-center'>
-                    <div className='bg-[#FFE1AA] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><HiOutlineEnvelope size={30} /></div>
+                    <div className='bg-[#f7a437] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><HiOutlineEnvelope size={30} /></div>
                     <h1 className='font-Playfair text-[28px] font-medium'>E-invite</h1>
                     <p className='font-Lato text-[17px]'>Send the word, spread the love! Invite friends & family. Our e-invites make it easy to share the excitement</p>
                 </div>
                 <div className='text-center'> 
-                    <div className='bg-[#FFE1AA] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><GrGift size={30} /></div>
+                    <div className='bg-[#f7a437] rounded-md w-[56px] h-[52px] flex justify-center items-center m-auto'><GrGift size={30} /></div>
                     <h1 className='font-Playfair text-[28px] font-medium'>Virtual gifting</h1>
                     <p className='font-Lato text-[17px]'>Send love and joy to someone special, wherever they are in the world. Celebrate special moments!</p>
                 </div>
@@ -219,11 +219,11 @@ const Home = () => {
 
             <section className='flex flex-col text-left items-start justify-center md:items-center px-20 md:px-96 md:text-center gap-8 mt-10 font-Inter'>
                 <div className='flex gap-2 '>
-                    <div className='text-[#AA6E00]'><RxStarFilled /></div>
-                    <div className='text-[#AA6E00]'><RxStarFilled /></div>
-                    <div className='text-[#AA6E00]'><RxStarFilled /></div>
-                    <div className='text-[#AA6E00]'><RxStarFilled /></div>
-                    <div className='text-[#AA6E00]'><RxStarFilled /></div>
+                    <div className='text-[#023d3d]'><RxStarFilled /></div>
+                    <div className='text-[#023d3d]'><RxStarFilled /></div>
+                    <div className='text-[#023d3d]'><RxStarFilled /></div>
+                    <div className='text-[#023d3d]'><RxStarFilled /></div>
+                    <div className='text-[#023d3d]'><RxStarFilled /></div>
                     
                 </div>
 
@@ -247,12 +247,12 @@ const Home = () => {
 
             </section>
 
-            <section className='bg-[#803e00] font-Inter flex justify-center items-center text-center p-10 w-[95%] rounded-xl mt-14 m-auto'>
+            <section className='bg-[#023d3d] font-Inter flex justify-center items-center text-center p-10 w-[95%] rounded-xl mt-14 m-auto'>
                 <div className='text-white'>
                     <h1 className='text-[32px]'>Make Every Event Unforgettable</h1>
                     <p>Sign up for your free trial and experience the future of virtual events.</p>
                     <div><button type="button"
-          onClick={openModal} className='bg-white px-6 rounded-lg py-3 text-[#803e00] font-bold mt-6'>Sign up now</button></div>
+           className='bg-white px-6 rounded-lg py-3 text-[#803e00] font-bold mt-6'><NavLink to="/sign_up_page">Sign up now</NavLink></button></div>
                 </div>
             </section>
 

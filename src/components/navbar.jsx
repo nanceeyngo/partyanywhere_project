@@ -17,7 +17,9 @@ export const Navbar = () => {
     return (
         <div className='text-[black] flex justify-between items-center h-16 bg-[white] px-8 md:px-12'>
         
-           
+        <div className='w-[200px] h-[200px] cursor-pointer mt-20'>
+                    <img src={logo} alt="LOGO" />
+                </div>
         
                 <ul className='hidden md:flex justify-between gap-8 font-Lato'>
 
@@ -41,13 +43,11 @@ export const Navbar = () => {
                     
                 </ul>
 
-                <div className='w-[200px] h-[200px] cursor-pointer mt-20'>
-                    <img src={logo} alt="LOGO" />
-                </div>
+                
         
         <div className='hidden md:flex justify-between gap-4 m-3 font-Lato'>
-            <button className='bg-[#AA6E00] px-6 rounded-lg py-2 text-white'><NavLink to="/sign_up_page">Sign up</NavLink></button>
-            <button className='bg-transparent border-[#AA6E00] border px-6 rounded-lg py-2 text-[#AA6E00]'><Link to="/login_page">Log In</Link></button>
+            <button className='bg-[#023d3d] px-6 rounded-lg py-2 text-white'><NavLink to="/sign_up_page">Sign up</NavLink></button>
+            <button className='bg-transparent border-[#f7a437] border px-6 rounded-lg py-2 text-[#AA6E00]'><Link to="/login_page">Log In</Link></button>
         </div>
         
         <div className='md:hidden' onClick={handleNav}>
@@ -56,7 +56,7 @@ export const Navbar = () => {
         </div>
        
         {/* Mobile Navbar */}
-        <div className={!showNav? 'z-10 left-[0%] fixed top-[0%] w-[60%] bg-[#464444] h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
+        <div className={!showNav? 'z-10 left-[0%] fixed top-[0%] w-[60%] bg-[white] h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
      
         <div className='w-[100px] h-[100px] cursor-pointer'>
                     <img src={logo} alt="LOGO" />
@@ -82,8 +82,8 @@ export const Navbar = () => {
 
         <div className='space-y-4 mt-32'>
            
-            <button className='bg-[#AA6E00] px-6 rounded-lg py-2 text-white m-auto w-full font-bold'>Sign up</button>
-            <button className='bg-transparent border-[#AA6E00] border px-6 rounded-lg py-2 text-[#AA6E00] m-auto w-full font-bold'>Log In</button>
+            <button className='bg-[#023d3d] px-6 rounded-lg py-2 text-white m-auto w-full font-bold'><NavLink to="/sign_up_page">Sign up</NavLink></button>
+            <button className='bg-transparent border-[#f7a437] border px-6 rounded-lg py-2 text-[#AA6E00] m-auto w-full font-bold'><Link to="/login_page">Log In</Link></button>
         </div>
         
         </div>
