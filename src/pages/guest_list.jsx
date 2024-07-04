@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaArrowLeft, FaCircleCheck } from "react-icons/fa6";
 import { FiBell } from "react-icons/fi";
+import gltable from "../assets/gltable.png";
 
 const Guestlist = () => {
     return (
@@ -18,7 +19,11 @@ const Guestlist = () => {
             
         </div>
         </div>
-            <div className='py-8 flex justify-center gap-6 md:gap-24 mt-[23rem]'>
+
+        <div className='mt-10 w-[90%] m-auto'>
+            <img src={gltable} alt="Guest list table" />
+        </div>
+            <div className='py-8 flex justify-center gap-6 md:gap-24 mt-[10rem] md:mt-[4rem]'>
             <button className='bg-[#174C4D] px-4 rounded-lg py-[0.7rem] text-white'><NavLink to="/rsvp">Add guest</NavLink></button>
             
             <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-4 rounded-lg py-[0.7rem]'><NavLink to="/import_contact">Import contact</NavLink></button>

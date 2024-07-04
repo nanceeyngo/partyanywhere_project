@@ -18,7 +18,7 @@ const CreateInvitation = () => {
                     <p className='font-bold font-Inter text-[28px] mobile:text-[18px]'>Create E-invite</p>
                 </div>
 
-                <div className='grid grid-cols-2 gap-4 w-[400px] text-[10px] cursor-pointer'>
+                <div className='grid grid-cols-2 gap-4 w-[96%] md:w-[400px] text-[10px] cursor-pointer'>
                     <div>
                         <p className='mb-0.5 text-[17px] font-medium  mobile:text-[13px]'>Wedding</p>
                         <img src={Wedding} alt="Wedding" className='hover:w-44 hover:h-36 w-40 h-32 mobile:w-[126px] mobile:h-24 rounded-md' />
@@ -48,7 +48,7 @@ const CreateInvitation = () => {
                     <div>
                         <p className='mb-1 text-[15px] mobile:text-[13px] font-medium '>Upload Your Design</p>
                         <img src={Upload} alt="Upload Your Own Design" className='hover:w-44 hover:h-36 w-40 h-32 relative mobile:w-[126px] mobile:h-24 rounded-2xl' />
-                        <p className='font-medium absolute bottom-[18px] left-[280px] w-[76px] text-[13px] leading-4'>Upload Your Own Design</p>
+                        <p className='font-medium absolute bottom-[18px] left-[250px] md:left-[280px] w-[76px] text-[13px] leading-4'>Upload Your Own Design</p>
                     </div>
                     </Link>
 
