@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa6";
+import successful1 from "../assets/successful1.png";
+import { IoMdClose } from "react-icons/io";
 
 const Invitelink = () => {
 
@@ -8,6 +10,8 @@ const Invitelink = () => {
 const [inputValues, setInputValues] = useState({});
 //declaring a constant to validate form
  const [error, setError] = useState('');
+
+ const [showDialog, setShowDialog] = useState(false);
 
 
 //creating a function to hadle input changes in the form
@@ -33,10 +37,16 @@ const [inputValues, setInputValues] = useState({});
      if (!error) {
 
      console.log('Form submitted with input:', inputValues);
-     alert('THANK YOU FOR BOOKING WITH US! YOUR RESPONSE HAS BEEN RECEIVED.');
+     setShowDialog(true);
      }
- }
+ };
 
+ const copyLink = () => {
+    alert('Link copied');
+ };
+        const closeModal = () => {
+            setShowDialog(false);
+    };
     return (
         <div className='form-container2 mt-4 ml-12'>
             
@@ -75,7 +85,7 @@ const [inputValues, setInputValues] = useState({});
             <label htmlFor='message'>
                 Custom message  </label><br></br><br></br>
             <textarea 
-                className='border-[1px] rounded-lg border-[rgb(97,86,86)]'
+                className=' w-[310px] md:w-[900px] border-[1px] rounded-lg border-[rgb(97,86,86)]'
                 id="message"
                 name='message'
                 cols={46}
@@ -88,12 +98,38 @@ const [inputValues, setInputValues] = useState({});
             {error && <p className='errormsg'>{error}</p>}
             
             <div className='py-8 flex justify-center md:justify-start'>
-            <button className='bg-[#174C4D] px-16 rounded-lg py-[0.7rem] text-white'>Create link</button>
+            <button type='submit' className='bg-[#174C4D] px-16 rounded-lg py-[0.7rem] text-white'>Create link</button>
             </div>
 
 
             </form>
 
+
+            {showDialog && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-8 md:px-28 rounded-lg shadow-md text-center relative">
+                        
+                        
+                        <IoMdClose size={22} className="absolute top-4 right-4 cursor-pointer text-[#023d3d]  " onClick={closeModal} />
+
+                        
+                        
+                        <img src={successful1} alt="Successful" className='mx-auto mt-14 mb-10' />
+                        
+                        
+                        <p className="text-[16px] font-normal font-Lato">Invite link created successfully</p>
+                        
+                        <div className='py-10 flex gap-6'>
+             <button  className='bg-[#023d3d] px-10 md:px-16 rounded-lg py-[0.7rem] text-white'><NavLink to="/guest_list">Done</NavLink></button>
+
+            
+            <button onClick={copyLink} className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-6 md:px-8 rounded-lg py-[0.7rem]'><NavLink to="/guest_list">Copy link</NavLink></button>
+            
+            </div>
+                    
+                    </div>
+                </div>
+            )};
 
             
             

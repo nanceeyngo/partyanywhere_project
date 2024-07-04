@@ -6,7 +6,7 @@ import Services from '../pages/services';
 import Events from '../pages/events';
 import Home from '../pages/home';
 import Rsvp from '../pages/rsvp';
-import Einvite from '../pages/e-invite';
+import CreateInvitation from '../pages/e-invite1';
 import Livestream from '../pages/live_streaming';
 import Create from '../pages/create_wallet';
 import Spray from '../pages/spray_pattern';
@@ -17,6 +17,8 @@ import Login from '../pages/login_page';
 import ForgotPwd from '../pages/forgot_password';
 import ResetPwd from '../pages/reset_password';
 import Signup from '../pages/sign_up_page';
+import CreateInvitation2 from '../pages/e-invite2';
+import CustomizeInvite from '../pages/customize_invite';
 
 
 
@@ -36,7 +38,9 @@ const RenderNav = () => {
                 <Route path="/events" element={<Events title="Contact Us" />} />
                 <Route path="/sign_up_page" element={<Signup title="sign_up_page" />} />
                 <Route path="/rsvp" element={<Rsvp title="RSVP" />} />
-                <Route path="/e-invite" element={<Einvite title="E-invite" />} />
+                <Route path="/e-invite1" element={<CreateInvitation title="E-invite" />} />
+                <Route path="/e-invite2" element={<CreateInvitation2 title="E-invite" />} />
+                <Route path="/customize_invite" element={<CustomizeInvite title="E-invite" />} />
                 <Route path="/live_streaming" element={<Livestream title="Live Streaming" />} />
                 <Route path="/create_wallet" element={<Create title="Create Wallet" />} />
                 <Route path="/spray_pattern" element={<Spray title="Spray pattern" />} />

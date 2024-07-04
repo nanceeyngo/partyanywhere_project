@@ -125,9 +125,9 @@ const Rsvp = () => {
             {error && <p className='errormsg'>{error}</p>}
             
             <div className='py-8 flex gap-6'>
-            <button type='submit' className='bg-[#174C4D] px-4 rounded-lg py-[0.7rem] text-white'>Add guest</button>
+            <button type='submit' className='bg-[#023d3d] px-4 md:px-20 rounded-lg py-[0.7rem] text-white'>Add guest</button>
             
-            <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-4 rounded-lg py-[0.7rem]'><NavLink to="/import_contact">Import contact</NavLink></button>
+            <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-4 md:px-20 rounded-lg py-[0.7rem]'><NavLink to="/import_contact">Import contact</NavLink></button>
             </div>
 
 
@@ -135,7 +135,7 @@ const Rsvp = () => {
 
             {showDialog && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white p-8 rounded-md shadow-md text-center relative">
+                    <div className="bg-white p-8 md:px-28 rounded-lg shadow-md text-center relative">
                         
                         
                         <IoMdClose size={22} className="absolute top-4 right-4 cursor-pointer text-[#023d3d]  " onClick={closeModal} />
@@ -148,10 +148,10 @@ const Rsvp = () => {
                         <p className="text-[16px] font-normal font-Lato">Guest successfully added</p>
                         
                         <div className='py-10 flex gap-6'>
-             <button onClick={closeModal} className='bg-[#023d3d] px-16 rounded-lg py-[0.7rem] text-white'>Done</button>
+             <button onClick={closeModal} className='bg-[#023d3d] px-10 md:px-16 rounded-lg py-[0.7rem] text-white'>Done</button>
 
             
-            <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-8 rounded-lg py-[0.7rem]'><NavLink to="/guest_list">View guest list</NavLink></button>
+            <button className='border-[#F69A22] border-[1.9px] text-[#F69A22] font-semibold px-6 md:px-8 rounded-lg py-[0.7rem]'><NavLink to="/guest_list">View guest list</NavLink></button>
             
             </div>
                     

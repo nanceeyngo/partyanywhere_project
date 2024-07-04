@@ -30,7 +30,7 @@ export const Navbar = () => {
                     <li><NavLink to="/services">Services<span className='arrow'></span></NavLink>
                     <ul className='dropdown'>
                     <li><NavLink to="/rsvp">RSVP</NavLink></li>
-                    <li><NavLink to="/e-invite">E-invite</NavLink></li>
+                    <li><NavLink to="/e-invite1">E-invite</NavLink></li>
                     <li><NavLink to="/live_streaming">Live Streaming</NavLink></li>
                     <li><NavLink to="/create_wallet">Create Wallet</NavLink></li>
                     <li><NavLink to="/spray_pattern">Spray pattern</NavLink></li>
@@ -71,7 +71,7 @@ export const Navbar = () => {
                 <li className='pb-2 border-b border-gray-500'><NavLink to="/services">Services<span className='arrow'></span></NavLink>
                     <ul className='dropdownm'>
                     <li><NavLink to="/rsvp">RSVP</NavLink></li>
-                    <li><NavLink to="/e-invite">E-invite</NavLink></li>
+                    <li><NavLink to="/e-invite1">E-invite</NavLink></li>
                     <li><NavLink to="/live_streaming">Live Streaming</NavLink></li>
                     <li><NavLink to="/create_wallet">Create Wallet</NavLink></li>
                     <li><NavLink to="/spray_pattern">Spray pattern</NavLink></li>
