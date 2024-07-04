@@ -53,7 +53,7 @@ const Signup = () => {
                     
                     <div onClick={TogglePwd}>
                     {/* Toggle between open and close icons based on hidePwd state */}
-                    {!hidePwd ? <BiShow size={24} style={{ color: 'grey' }} className='absolute top-11 right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/> : <BiHide size={24} style={{ color: 'grey' }} className='absolute top-11 right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/>}
+                    {!hidePwd ? <BiShow size={24} style={{ color: 'grey' }} className='absolute top-11 right-10 md:right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/> : <BiHide size={24} style={{ color: 'grey' }} className='absolute top-11 right-10 md:right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/>}
                     </div>
                 </div>
 

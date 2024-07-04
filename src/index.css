@@ -266,6 +266,11 @@ line-height: 57.6px;
         
     
     }
+    .loginform input {
+       width: 50%;
+       margin-right: 40px;
+      
+    }
 
     .form-container2 {
       padding-left: 40px;

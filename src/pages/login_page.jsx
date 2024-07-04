@@ -52,7 +52,7 @@ const Login = () => {
           <form action="" className='loginform font-Inter'>
               <div className='mb-3'>
                 <label htmlFor="email" className='text-[18px] font-medium block  mb-2'>Email/phone number</label>
-                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:text-[14px] below-sm:rounded-lg mobile:w-[214px] mobile:pl-0.5 ' placeholder='Enter your email or phone number' />
+                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded md:w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:text-[14px] below-sm:rounded-lg mobile:w-[214px] mobile:pl-0.5 ' placeholder='Enter your email or phone number' />
               </div>       
 
                 <div className='mb-2 relative'>
@@ -61,7 +61,7 @@ const Login = () => {
                     
                     <div onClick={TogglePwd}>
                     {/* Toggle between open and close icons based on hidePwd state */}
-                    {!hidePwd ? <BiShow size={24} style={{ color: 'grey' }} className='absolute top-11 right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/> : <BiHide size={24} style={{ color: 'grey' }} className='absolute top-11 right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/>}
+                    {!hidePwd ? <BiShow size={24} style={{ color: 'grey' }} className='absolute top-11 right-10 md:right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/> : <BiHide size={24} style={{ color: 'grey' }} className='absolute top-11 right-10 md:right-5 cursor-pointer below-sm:right-2 mobile:right-3 '/>}
                     </div>
                 </div>
 
