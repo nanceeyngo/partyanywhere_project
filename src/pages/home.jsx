@@ -260,8 +260,8 @@ const Home = () => {
 
             <div>
             
-            <div className='w-[150px] h-[150px] cursor-pointer m-auto'>
-                    <img src={logo} alt="LOGO" />
+            <div className='w-[280px] h-[200px] cursor-pointer m-auto'>
+                    <img className='w-[100%] h-[100%] z-20' src={logo} alt="LOGO" />
                 </div>
 
                 <ul className='flex justify-between gap-8 font-Lato'>

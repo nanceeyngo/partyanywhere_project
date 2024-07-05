@@ -34,10 +34,10 @@ const Login = () => {
             <p className='font-Inter text-[14px] font-medium text-[#626262] mb-6 '>Login to continue</p>
 
             <div className='login-button'>
-            <button className='w-[380px] md:w-[500px] py-3 border-gray-300 border-2 items-center flex justify-center mb-3 rounded-md font-Inter font-medium text-[15px] cursor-pointer below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '><FcGoogle size={21} className='inline mr-3' />Continue with google
+            <button className='w-[350px] md:w-[500px] py-3 border-gray-300 border-2 items-center flex justify-center mb-3 rounded-md font-Inter font-medium text-[15px] cursor-pointer below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '><FcGoogle size={21} className='inline mr-3' />Continue with google
             </button>
 
-            <button className='w-[380px] md:w-[500px] py-2 border-neutral-500 border items-center flex justify-center rounded-md font-Inter font-medium text-[15px] mb-7 below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '>
+            <button className='w-[350px] md:w-[500px] py-2 border-neutral-500 border items-center flex justify-center rounded-md font-Inter font-medium text-[15px] mb-7 below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '>
             <IoLogoApple size={30} className='inline pr-[6px]'/>
             <p className='mr-2 pl-2 '>Continue with apple</p>
             </button>
@@ -52,7 +52,7 @@ const Login = () => {
           <form action="" className='loginform font-Inter'>
               <div className='mb-3'>
                 <label htmlFor="email" className='text-[18px] font-medium block  mb-2'>Email/phone number</label>
-                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded md:w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:text-[14px] below-sm:rounded-lg mobile:w-[214px] mobile:pl-0.5 ' placeholder='Enter your email or phone number' />
+                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded w-0 md:w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:text-[14px] below-sm:rounded-lg mobile:w-[214px] mobile:pl-0.5 ' placeholder='Enter your email or phone number' />
               </div>       
 
                 <div className='mb-2 relative'>
