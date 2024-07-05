@@ -58,7 +58,7 @@ const Signup = () => {
                 </div>
 
                 <div className='mb-3'>
-                <label htmlFor="email" className='text-[13px] font-medium block mb-2'>I agree to the terms & policy</label>
+                <label htmlFor="checkbox" className='text-[13px] font-medium block mb-2'><input type="checkbox" id='checbox' />I agree to the terms & policy</label>
                 
               </div>    
 

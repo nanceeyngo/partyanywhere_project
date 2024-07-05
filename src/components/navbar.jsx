@@ -27,7 +27,7 @@ export const Navbar = () => {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about_us">About us</NavLink></li>
                     
-                    <li><NavLink to="/services">Services<span className='arrow'></span></NavLink>
+                    <li><NavLink to="">Services<span className='arrow'></span></NavLink>
                     <ul className='dropdown'>
                     <li><NavLink to="/rsvp">RSVP</NavLink></li>
                     <li><NavLink to="/e-invite1">E-invite</NavLink></li>
@@ -68,7 +68,7 @@ export const Navbar = () => {
                 
                 <li className='pb-2 border-b border-gray-500'><NavLink to="/events">Events</NavLink></li>
                 
-                <li className='pb-2 border-b border-gray-500'><NavLink to="/services">Services<span className='arrow'></span></NavLink>
+                <li className='pb-2 border-b border-gray-500'><NavLink to="">Services<span className='arrow'></span></NavLink>
                     <ul className='dropdownm'>
                     <li><NavLink to="/rsvp">RSVP</NavLink></li>
                     <li><NavLink to="/e-invite1">E-invite</NavLink></li>
