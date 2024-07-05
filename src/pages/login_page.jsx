@@ -28,7 +28,7 @@ const Login = () => {
                 <img src={LoginImg} alt="welcome image" className='hidden md:block h-full w-[450px] rounded-[7px] ml-3 mr-12 below-sm:w-[80%] below-sm:ml-1 below-sm:mr-0 mobile:w-[87%] ' />
             </div>
 
-            <div className='login-container mt-[0.5px] below-sm:mt-0 ml-40 md:ml-0'>
+            <div className='login-container mt-[0.5px] below-sm:mt-0 ml-[8.2rem] md:ml-0'>
             <h1 className='font-semibold font-Playfair text-[25px] '>Welcome back!</h1>
 
             <p className='font-Inter text-[14px] font-medium text-[#626262] mb-6 '>Login to continue</p>
@@ -52,7 +52,7 @@ const Login = () => {
           <form action="" className='loginform font-Inter'>
               <div className='mb-3'>
                 <label htmlFor="email" className='text-[18px] font-medium block  mb-2'>Email/phone number</label>
-                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded w-0 md:w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:text-[14px] below-sm:rounded-lg mobile:w-[214px] mobile:pl-0.5 ' placeholder='Enter your email or phone number' />
+                <input type="text" id="email" className='border-neutral-400 pl-2 py-3 border rounded w-0 md:w-[500px] font-Lato mb-1 below-sm:w-[230px] below-sm:rounded-lg ' placeholder='Enter your email or phone number' />
               </div>       
 
                 <div className='mb-2 relative'>
@@ -69,8 +69,8 @@ const Login = () => {
                 <p className='text-left text-black mb-14 cursor-pointer font-Inter font-semibold text-[13px] below-sm:mb-10 '>Forgot password?</p>
                 </NavLink>
 
-                <div className='flex justify-center'>
-                <button type="submit" className='rounded-md text-white w-[380px] md:w-[500px] py-2 text-center font-Lato bg-[#023d3d] below-sm:w-[230px] below-sm:pt-2 mobile:w-[210px]'>Login</button>
+                <div className='block md:flex justify-center'>
+                <button type="submit" className='rounded-md text-white w-[330px] md:w-[500px] py-2 text-center font-Lato bg-[#023d3d] below-sm:w-[230px] below-sm:pt-2 mobile:w-[210px]'>Login</button>
                 </div>
                 
                 <div className='items-center text-center md:text-left text-[13px] ml-0 md:ml-40 mt-2 font-Inter font-medium below-sm:ml-2 mobile:ml-1 '>

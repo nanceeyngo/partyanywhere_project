@@ -27,7 +27,7 @@ const Signup = () => {
                 <img src={signupImg} alt="welcome image" className='hidden md:block h-full w-[500px] rounded-[7px] ml-3 mr-12 below-sm:w-[80%] below-sm:ml-1 below-sm:mr-0 mobile:w-[87%] ' />
             </div>
 
-            <div className='login-container mt-[0.5px] below-sm:mt-0 ml-40 md:ml-0'>
+            <div className='login-container mt-[0.5px] below-sm:mt-0 ml-[8.2rem] md:ml-0'>
             <h1 className='font-semibold font-Playfair text-[25px] '>Create an account</h1>
 
             <p className='font-Inter text-[14px] font-medium text-[#626262] mb-6 '>Let's get you started</p>
@@ -62,8 +62,8 @@ const Signup = () => {
                 
               </div>    
 
-                <div className='flex justify-center mt-10'>
-                <button type="submit" className='rounded-md text-white w-[380px] md:w-[500px] py-2 text-center font-Lato bg-[#023d3d] below-sm:w-[230px] below-sm:pt-2 mobile:w-[210px]'>Signup</button>
+                <div className='block md:flex justify-center mt-10'>
+                <button type="submit" className='rounded-md text-white w-[330px] md:w-[500px] py-2 text-center font-Lato bg-[#023d3d] below-sm:w-[230px] below-sm:pt-2 mobile:w-[210px]'>Signup</button>
                 </div>
                 
                 <div className='items-center text-center md:text-left text-[13px] ml-0 md:ml-40 mt-6 font-Inter font-medium below-sm:ml-2 mobile:ml-1 '>
@@ -78,7 +78,7 @@ const Signup = () => {
           </div>
           
           <div className='login-button'>
-            <button className='w-[380px] md:w-[500px] py-3 border-gray-300 border-2 items-center flex justify-center mb-3 rounded-md font-Inter font-medium text-[15px] cursor-pointer below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '><FcGoogle size={21} className='inline mr-3' />Sign up with google
+            <button className='w-[340px] md:w-[500px] py-3 border-gray-300 border-2 items-center flex justify-center mb-3 rounded-md font-Inter font-medium text-[15px] cursor-pointer below-sm:w-[220px] below-sm:rounded-xl below-sm:font-semibold mobile:w-[210px] '><FcGoogle size={21} className='inline mr-3' />Sign up with google
             </button>
             </div>
             </form>
